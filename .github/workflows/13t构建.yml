@@ -25,7 +25,7 @@ on:
       KERNEL_NAME:
         description: "内核名称修改"
         required: true
-        default: '-By-kuan-jiangbeichen'
+        default: '-By-kuan-weisom'
       KERNEL_TIME_MODE:
         description: "内核编译时间模式"
         required: true
@@ -283,7 +283,7 @@ jobs:
                 **风驰内核**: $fengchi
                 **SUSFS**: $susfs
                 **构建时间**: $KERNEL_TIME
-                **构建者**: 酷安by姜北尘"
+                **构建者**: 酷安byweisom"
             echo "RELEASE_BODY<<EOF" >> $GITHUB_ENV
             echo "$desc" >> $GITHUB_ENV
             echo "EOF" >> $GITHUB_ENV
