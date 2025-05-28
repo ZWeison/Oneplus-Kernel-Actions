@@ -295,7 +295,8 @@ jobs:
 
       - name: Zip AnyKernel3
         run: |
-          zip -r SuKiSu_${KSUVER}_${{ github.event.inputs.FEIL }}_${{ steps.formatted_date.outputs.formatted }}.zip AnyKernel3/*
+          cd AnyKernel3
+          zip -r SuKiSu_${KSUVER}_${{ github.event.inputs.FEIL }}_${{ steps.formatted_date.outputs.formatted }}.zip ./*
 
       - name: Upload Release
         uses: softprops/action-gh-release@v2
